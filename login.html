@@ -1,16 +1,33 @@
 <!DOCTYPE html>
 <html lang="es">
-<head><meta charset="UTF-8"><title>Iniciar Sesion</title><link rel="stylesheet" href="css/estilos.css"></head>
+<head>
+    <meta charset="UTF-8">
+    <title>Iniciar Sesion</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
 <body>
     <div class="login-container">
         <h2>Iniciar Sesion</h2>
-        <form action="tienda.html" method="GET">
-            <label>Nombre de usuario o correo:</label>
-            <input type="text" name="usuario" required>
-            <label>Contrasena:</label>
-            <input type="password" name="clave" required>
+        <form onsubmit="return validar()">
+            <label>Nombre de usuario:</label>
+            <input type="text" id="usuario" placeholder="admin" required>
+            <label>Contraseña:</label>
+            <input type="password" id="clave" placeholder="1234" required>
             <input type="submit" value="Iniciar sesion" class="btn-login">
         </form>
+        <p class="info">Usa: admin / 1234</p>
     </div>
+<script>
+function validar(){
+  var u=document.getElementById('usuario').value;
+  var c=document.getElementById('clave').value;
+  if((u==='admin' && c==='1234')){
+    window.location.href='tienda.html';
+  } else {
+    alert('Usa admin / 1234');
+  }
+  return false;
+}
+</script>
 </body>
 </html>
