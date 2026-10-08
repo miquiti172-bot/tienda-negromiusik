@@ -1,0 +1,262 @@
+/* VERSION COLORIDA - LLAMATIVA */
+body{
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin:0;
+    min-height:100vh;
+    background: linear-gradient(135deg, #ff006e, #8338ec, #3a86ff);
+    background-attachment: fixed;
+}
+
+/* INICIO - Bienvenida */
+.contenedor-inicio{
+    width:550px;
+    background:white;
+    margin:100px auto;
+    padding:50px 40px;
+    border-radius:25px;
+    text-align:center;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+    border-top: 8px solid #ffbe0b;
+}
+.contenedor-inicio h1{
+    color:#8338ec;
+    font-size:32px;
+    margin-bottom:10px;
+}
+.contenedor-inicio p{
+    color:#555;
+    font-size:18px;
+}
+.btn{
+    display:inline-block;
+    background: linear-gradient(90deg, #ff006e, #ffbe0b);
+    color:white;
+    padding:14px 35px;
+    text-decoration:none;
+    margin-top:25px;
+    border-radius:30px;
+    font-weight:bold;
+    font-size:18px;
+    box-shadow: 0 5px 15px rgba(255,0,110,0.4);
+    transition:0.3s;
+}
+.btn:hover{
+    transform:scale(1.05);
+}
+
+/* LOGIN */
+.login-container{
+    width:380px;
+    background:white;
+    margin:80px auto;
+    padding:35px;
+    border-radius:25px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+    border-left: 8px solid #3a86ff;
+}
+.login-container h2{
+    text-align:center;
+    color:#ff006e;
+    font-size:28px;
+    margin-bottom:5px;
+}
+.login-container label{
+    display:block;
+    margin-top:18px;
+    font-weight:bold;
+    color:#8338ec;
+}
+.login-container input[type="text"],
+.login-container input[type="password"]{
+    width:100%;
+    padding:12px;
+    border:2px solid #ddd;
+    border-radius:12px;
+    margin-top:6px;
+    font-size:16px;
+    box-sizing:border-box;
+}
+.login-container input:focus{
+    border-color:#3a86ff;
+    outline:none;
+    box-shadow:0 0 0 3px rgba(58,134,255,0.2);
+}
+.btn-login{
+    width:100%;
+    margin-top:25px;
+    padding:14px;
+    background: linear-gradient(90deg, #8338ec, #3a86ff);
+    color:white;
+    border:none;
+    border-radius:12px;
+    cursor:pointer;
+    font-size:18px;
+    font-weight:bold;
+    box-shadow: 0 5px 15px rgba(131,56,236,0.4);
+}
+.btn-login:hover{
+    background: linear-gradient(90deg, #3a86ff, #8338ec);
+}
+.info{
+    font-size:13px;
+    color:#666;
+    margin-top:15px;
+    background:#f0f7ff;
+    padding:12px;
+    border-radius:10px;
+    text-align:center;
+    border-left:4px solid #3a86ff;
+}
+
+/* TIENDA */
+header{
+    background: linear-gradient(90deg, #ff006e, #8338ec);
+    color:white;
+    padding:18px 30px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 4px 15px rgba(0,0,0,0.2);
+}
+header h2{
+    margin:0;
+    letter-spacing:1px;
+}
+header a{
+    color:white;
+    text-decoration:none;
+    background:rgba(255,255,255,0.2);
+    padding:8px 15px;
+    border-radius:20px;
+}
+
+.contenedor-tienda{
+    width:90%;
+    max-width:1100px;
+    margin:30px auto;
+}
+.producto{
+    background:white;
+    border-radius:25px;
+    display:flex;
+    padding:30px;
+    box-shadow:0 20px 40px rgba(0,0,0,0.2);
+    overflow:hidden;
+}
+.producto-imagen{
+    width:48%;
+    background: linear-gradient(135deg, #f8f9ff, #e0e7ff);
+    border-radius:20px;
+    padding:20px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.producto-imagen img{
+    width:100%;
+    border-radius:15px;
+    transition:0.4s;
+}
+.producto-imagen img:hover{
+    transform:scale(1.05);
+}
+.producto-info{
+    width:52%;
+    padding-left:35px;
+}
+.producto-info h1{
+    color:#1a1a1a;
+    font-size:28px;
+    margin-top:0;
+}
+.precio{
+    font-size:34px;
+    font-weight:900;
+    background: linear-gradient(90deg, #ff006e, #ffbe0b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.producto-info h3{
+    color:#8338ec;
+    margin-top:22px;
+    border-left:4px solid #ffbe0b;
+    padding-left:10px;
+}
+.producto-info p{
+    color:#444;
+    line-height:1.6;
+}
+.producto-info ul{
+    margin-left:0;
+    padding-left:20px;
+}
+.producto-info li{
+    padding:6px 0;
+    color:#333;
+}
+.producto-info li::marker{
+    color:#ff006e;
+}
+
+.btn-comprar{
+    background: linear-gradient(90deg, #ff006e, #ff3c6e);
+    color:white;
+    border:none;
+    padding:14px 28px;
+    border-radius:30px;
+    cursor:pointer;
+    font-weight:bold;
+    font-size:16px;
+    margin-right:10px;
+    box-shadow:0 5px 15px rgba(255,0,110,0.3);
+    transition:0.3s;
+}
+.btn-comprar:hover{transform:translateY(-2px); box-shadow:0 8px 20px rgba(255,0,110,0.4);}
+
+.btn-carrito{
+    background:white;
+    color:#8338ec;
+    border:2px solid #8338ec;
+    padding:12px 26px;
+    border-radius:30px;
+    cursor:pointer;
+    font-weight:bold;
+    font-size:16px;
+    transition:0.3s;
+}
+.btn-carrito:hover{
+    background:#8338ec;
+    color:white;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#1a1a2e;
+    color:white;
+    margin-top:40px;
+}
+
+@media(max-width:700px){
+    .producto{flex-direction:column;}
+    .producto-imagen, .producto-info{width:100%; padding:15px 0;}
+    .contenedor-inicio, .login-container{width:90%;}
+}
+
+
+/* Foto de bienvenida - colorida */
+.img-bienvenida{
+    width:160px;
+    height:160px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid #fff;
+    outline:5px solid #ff006e;
+    box-shadow:0 10px 25px rgba(0,0,0,0.4);
+    margin-bottom:20px;
+    transition:0.3s;
+}
+.img-bienvenida:hover{
+    transform:scale(1.08) rotate(2deg);
+}
